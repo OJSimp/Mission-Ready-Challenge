@@ -6,8 +6,11 @@
     <title>Document</title>
   </head>
   <body>
+    <br />
     <section>
       <h2>Factory Design</h2>
+
+      <br />
 
       <h3>Create an Employee</h3>
       <label for="name">Employee Name: </label>
@@ -20,6 +23,7 @@
       <select name="" id="employeeType">
         <option value="developer">Developer</option>
         <option value="designer">Designer</option>
+        <option value="product">Product</option>
       </select>
 
       <br />
@@ -52,8 +56,83 @@
       <p>Unsorted numbers: <span id="unSortedNumbers"></span></p>
       <p>Sorted Numbers: <span id="sortedNumbers"></span></p>
     </section>
+
+    <br />
+    <hr />
+    <br />
+
+    <section>
+      <br />
+
+      <h2>Big O Notation</h2>
+      <p>Worst case complexity of an algorithm, using algerbraic terms.</p>
+      <ul>
+        <li>Expressed in terms of the input</li>
+        <li>Focuses on the bigger picture, not minute detials</li>
+      </ul>
+
+      <div>
+        <br />
+        <h3>- Fibonacci Sequence</h3>
+        <p>Sum of the two previous numbers</p>
+        <br />
+        <label for="fibonacci">How many times:</label>
+        <input type="number" id="fibonacci" />
+
+        <button id="fibGenerate">Generate</button>
+
+        <br />
+
+        <h4>Fibonacci Sequence:</h4>
+        <div id="fibonacci-answer"></div>
+        <br />
+        <p>Big-O = O(n)</p>
+      </div>
+
+      <div>
+        <br />
+        <h3>- Factorial of a number</h3>
+        <p>The product of all the integers from 1 to that number.</p>
+        <br />
+        <label for="factorial">Factorial of:</label>
+        <input type="number" id="factorial" />
+
+        <button id="factGenerate">Generate</button>
+
+        <h4>Factorial:</h4>
+        <div id="factorial-answer"></div>
+        <br />
+        <p>Big-O = O(n)</p>
+
+        <br />
+      </div>
+
+      <div>
+        <br />
+        <h3>- Prime number</h3>
+        <p>
+          Whole number greater than 1 that cannot be exactly divided by any
+          whole number other than itself and 1
+        </p>
+        <br />
+        <label for="prime">Is prime?</label>
+        <input type="number" id="prime" />
+
+        <button id="primeGenerate">Generate</button>
+
+        <div id="prime-answer"></div>
+        <br />
+        <p>Big-O = O(n)</p>
+
+        <br />
+      </div>
+      <br />
+      <hr />
+    </section>
   </body>
 </html>
 
 <script src="./FactoryDesign.js"></script>
 <script src="./MergeSort.js"></script>
+<script src="./AdvancedConcepts.js"></script>
+<script src="./BigONotation.js"></script>
