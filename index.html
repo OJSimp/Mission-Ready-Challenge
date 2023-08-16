@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <br />
@@ -122,12 +123,66 @@
 
         <div id="prime-answer"></div>
         <br />
+        <p>Big-O = O(sqrt(n))</p>
+
+        <br />
+      </div>
+
+      <div>
+        <br />
+        <h3>- Power of two number</h3>
+        <br />
+        <label for="powerTwo">Is prime?</label>
+        <input type="number" id="powerTwo" />
+
+        <button id="powerTwoGenerate">Generate</button>
+
+        <div id="powerTwo-answer"></div>
+        <br />
         <p>Big-O = O(n)</p>
 
         <br />
       </div>
       <br />
       <hr />
+    </section>
+
+    <section>
+      <br />
+      <h2>Create Library</h2>
+
+      <label for="title">Ttitle: </label>
+      <input type="text" id="title" />
+
+      <br />
+      <br />
+
+      <label for="name">Author: </label>
+      <input type="text" id="author" />
+
+      <br />
+      <br />
+
+      <label for="pages">Pages: </label>
+      <input type="number" id="pages" />
+
+      <br />
+      <br />
+      <!-- 
+      <label for="read">Read: </label>
+      <input type="checkbox" id="read" checked="true" /> -->
+
+      <br />
+      <br />
+
+      <button id="addBook" onclick="handleAddBookToArray()">Add Book</button>
+
+      <br />
+      <br />
+      <br />
+
+      <h3>Book Collection</h3>
+      <div id="displayBooksContainer"></div>
     </section>
   </body>
 </html>

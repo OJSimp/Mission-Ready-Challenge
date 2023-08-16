@@ -61,3 +61,35 @@ const updateFactorial = (factor) => {
 };
 
 // --- Prime Number --- //
+
+const primeGenearateButton = document.getElementById("primeGenerate");
+const isPrime = document.getElementById("prime");
+const primeAnswerContainer = document.getElementById("prime-answer");
+
+primeGenearateButton.addEventListener("click", () => {
+  let n = isPrime.value;
+
+  if (n < 2) {
+    return false;
+  }
+  for (i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      console.log(false);
+      return false;
+    } else {
+      console.log(true);
+      return true;
+    }
+  }
+});
+
+// Big - O = 0(n) (non optimised)
+// Big - O = O(sqrt(n))
+
+// --- Is Power of Two --- //
+
+function isPowerofTwo() {
+  if (n < 1) {
+  }
+  while (n > 1) {}
+}
